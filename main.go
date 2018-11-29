@@ -99,13 +99,13 @@ func main() {
 	flag.StringVar(&optDomain, "n", "z2018168.com", "cookie domain")
 	flag.StringVar(&optImgsDir, "d", "D:\\imgs", "-d : 图片的路径.")
 	flag.StringVar(&optPort, "p", "80", "listen port")
-	flag.StringVar(&optSuffix, "f", "jpg;", "sq img suffix name")
+	flag.StringVar(&optSuffix, "f", "jpg;", "img suffix name")
 	flag.Parse()
 
 	gImgID = 0
 	imgs = LoadImgs(optImgsDir, optSuffix)
 	if len(imgs) == 0 {
-		fmt.Println(`指定目录下没有二维码文件，退出`)
+		fmt.Println(`指定目录下没有img文件，退出`)
 		return
 	}
 
