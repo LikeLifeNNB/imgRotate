@@ -125,11 +125,11 @@ func main() {
 			Cache:      autocert.DirCache("certcache"),
 		}
 
-		/*	go func() {
+			go func() {
 				log.Fatal(http.ListenAndServe(":http",
 					m.HTTPHandler(nil)))
 			}()
-		*/
+		
 		s := &http.Server{
 			Addr:           ":443",
 			Handler:        rt,
