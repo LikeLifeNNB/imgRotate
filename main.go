@@ -96,7 +96,7 @@ func imgHandler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	flag.BoolVar(&optSecure, "s", false, "run in secure mode (https)")
-	flag.StringVar(&optDomain, "n", "z2018168.com", "cookie domain")
+	flag.StringVar(&optDomain, "n", "sohu.com", "cookie domain")
 	flag.StringVar(&optImgsDir, "d", "D:\\imgs", "-d : 图片的路径.")
 	flag.StringVar(&optPort, "p", "80", "listen port")
 	flag.StringVar(&optSuffix, "f", "jpg;", "img suffix name")
